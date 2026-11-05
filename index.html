@@ -2,21 +2,75 @@
 <html>
   
   <head>
-  <img src="WebBanner2026.png" alt="Banner" width="900" height="200">
-    <h1 style="font-family:calibri;"><b>ENG0018 Computer Laboratory 2026/2027 Conference Project</b></h1>
-    <h2 style="font-family:calibri;">URN 6977358</h2>
-  <hr>
-  <h2 style="font-family:calibri;"><b>Conference Paper: To what extent do reusable rockets reduce the financial, material and environmental costs of reaching space?</b></h2>
-  <hr>
-  <h3 style="font-family:calibri;">Abstract</h3>
-  <p style="font-family:calibri;">Reusable rockets are often promoted as a cheaper, more efficient way of reaching space, though often the extent of these benefits remain unclear. 
-    This paper aims to assess the financial, material and environmental effects of launching reusable rockets.
-    Currently, evidence suggests that reuse can cut costs, especially during high volumes of rocket launches and may reduce the material demand when it comes to building them. 
-    However, factors such as payload loss and fuel choice could limit these benefits.
-    It is hence concluded that reuseable rockets offer significant benefits under the right situations.</p>
-
-
-    
+    <title>ENG0018 Conference Project</title>
+    <style>
+      body {font-family: Calibri, Arial, sans-serif;}
+      img  {max-width: 100%; height; auto;}
+    </style>
   </head>
+
+  <body>
+    <img src="WebBanner2026.png" alt="Banner" width="900" height="200">
+    <h1>ENG0018 Computer Laboratory 2026/2027 Conference Project</h1>
+    <h2>URN 6977358</h2>
+    <hr>
+    <h2><b>Conference Paper: Investigating the systems that enabled the vertical landing of the Falcon 9 first stage.</b></h2>
+    <hr>
+    
+    <h3>Abstract</h3>
+    <p>Vertical landing has rapidly become an almost routine operation, with SpaceX recording 576 booster landings by February 2024, up from 271 booster landings up to February 2024 (Robinson-Smith, 2024; Robinson-Smith, 2026). This achievement is difficult to achieve as the rocket must achieve zero velocity at zero altitude, often without room for error due to lack of propellant (Blackmore, 2017). This paper aims to break down the different systems enabling the Falcon 9 first stage to overcome these problems and land safetly. It will outline the landing sequence, propulsion and aerodynamic control within the rocket, while also considering potential limitations.</p>
+  
+    <h3>1. Introduction</h3>
+    <p>We will begin with the sequence of events displayed in Table 1.</p>
+
+    <table>
+      <caption> Table 1: Main landing phases of a Falcon 9 rocket.</caption>
+      <thead>
+        <Style>
+          table { border-collapse: collapse; width: 100%; margin-bottom: 20px;}
+          caption { text-align: left; font-weight: bold; margin-bottom: 8px;}
+          th,td{border:1px solid #777777; padding: 8px; text-align: left;}
+          th {background: #f4cccc}
+        </Style>
+        <tr>
+          <th scope = "col">Phase</th>
+          <th scope = "col">Purpose</th>
+          <th scope = "col">Main System</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Flip</td>
+          <td>Turn stage around after separation to orientate rocket correctly for re-entry.</td>
+          <td>Nitrogen cold-gas thrusters</td>
+        </tr>
+        <tr>
+          <td>Boostback burn</td>
+          <td>Send stage back towards landing site.</td>
+          <td>Merlin engines</td>
+        </tr>
+        <tr>
+          <td>Re-entry burn</td>
+          <td>Reduce stage velocity during entry into the Earths atmosphere.</td>
+          <td>Merlin Engines</td>
+        </tr>
+        <tr>
+          <td>Atmospheric descent</td>
+          <td>Steer the rocket back towards the landsite</td>
+          <td>Grid fins</td>
+        </tr>
+        <tr>
+          <td>Landing burn</td>
+          <td>Correct final path, and drastically reduce velocity for landing.</td>
+          <td>Merlin engines + Guidance software</td>
+        </tr>
+        <tr>
+          <td>Touchdown</td>
+          <td>Absorb the force of landing.</td>
+          <td>Landing legs</td>
+        </tr>
+      </tbody>
+    </table>
+  </body>
   
 </html>
