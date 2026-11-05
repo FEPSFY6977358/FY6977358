@@ -18,7 +18,7 @@
     <hr> 
 
     <h3>Abstract</h3>
-    <p></p>
+    <p>Vertical landing is one of the fortes of the Falcon 9 rocket, allowing it to return to Earth intact and to be reused. However, with this comes a multitude of systems working hand in hand to ensure it lands safely. This paper investigates the different systems involved including the engines, grid fins, landing legs and guidance software. The evidence suggests that no individual system is responsible; instead, success depends on the systems working together within strict propellant limits. It is concluded that vertical landing is a major achievement but requires careful balancing between payload and propellant.</p>
     
     <h3>1. Introduction</h3>
     <p>Vertical landing has rapidly become an almost routine operation, with SpaceX recording 576 booster landings by February 2026, up from 271 booster landings up to February 2024 (Robinson-Smith, 2024; Robinson-Smith, 2026). This achievement is difficult to achieve as the rocket must achieve zero velocity at zero altitude, often without room for error due to lack of propellant (Blackmore, 2017). This paper aims to break down the different systems enabling the Falcon 9 first stage to overcome these problems and land safely. It will outline the landing sequence, propulsion and aerodynamic control within the rocket, while also considering potential limitations.</p>
@@ -78,6 +78,20 @@
 
     <h3>3. Propulsion</h3>
     <p>Now that the sequence has been outlined, it is necessary to examine the hardware involved as well. The first stage of the Falcon 9 uses nine Merlin engines, each capable of producing up to 854 kN of thrust (at sea level), it also has 4 grid fins and 4 deployable legs (SpaceX, n.d.). Precise engine control is essential during the descent stage; since hovering is not practical due to the amount of propellant spent to achieve it, a rocket decelerates to zero velocity at zero altitude, with the landing legs absorbing the rest of the rockets weight (Blackmore, 2017), (O’Connell, n.d.). Aerodynamic control also supports the propulsive braking. Each booster’s four grid fins are stowed away upon launch and deployed during the re-entry stage, allowing the booster to be controlled within the atmosphere (Blackmore, 2017). Finally, carbon fibre legs with shock-absorbing systems are deployed just before touchdown (O’Connell, n.d.). These legs are built to withstand the weight of the rocket as it lands. The value of a component is still largely based on its wider design. For the proposed RETALT launcher, grid fins played a minimal role in saving propellant budget, with only a 4.5% reduction of propellant usage compared with planar fins (De Zaiacomo et al., 2022), though this figure cannot reliably be applied to the Falcon 9.</p>
-  </body>
+    <hr>
+
+    <h3>4. Guidance and control</h3>
+    <p>We will now focus on the software that controls the hardware. During the landing burn, the booster has to calculate a route from the rocket to the target autonomously and within a fraction of a second. Failure to do so could result in a crash, and calculating an inaccurate route may use up too much propellant (Blackmore, 2017). Acikmese and Ploen (2007) showed that a minimum-fuel landing problem for Mars could be reformulated as a convex problem (a problem that can be quickly and efficiently solved by a computer), meaning that it could potentially be solved on board in real time. Earth landings are more difficult to model because the atmosphere is over a hundred times as dense compared to Mars; however, SpaceX uses custom generated code for very fast onboard convex optimisation (Blackmore, 2017). Malyuta et al. (2021) suggest that the final landing algorithm may be closely related to the Mars algorithm, though this is still a hypothesis. The stated target dispersions of 10 m for a drone ship and 30 m at Cape Canaveral show the accuracy required (Blackmore, 2017).</p>
+    <hr>
+
+    <h3>5. Limitations</h3>
+    <p>These systems do still impose a performance cost. The extra propellant required to be allocated to the landing sequence causes more weight and space to be taken up, resulting in less space for cargo (De Zaiacomo et al., 2022), and Falcon 9’s capacity to low Earth orbit falls by 24% when reused (NRO 	Cost and Acquisition Assessment Group, 2023). Recovery therefore requires a trade-off between mission performance and reusability.</p>
+    <hr>
+
+    <h3>6. Conclusion</h3>
+    <p>Throughout this paper, the systems that enabled the vertical landing of the Falcon 9 first stage were explored. This paper found that landing depends on engines, grid fins, legs and guidance software working together, rather than it being any single system. From this review, the author concludes that strict propellant limits are the central design challenge and that a careful balance between propellant and payload must be struck. Nevertheless, the limited public detail on SpaceX flight software restricts how fully its methods can be assessed. Further published data would be beneficial.</p>
+    <hr>
+        
+    </body>
   
 </html>
